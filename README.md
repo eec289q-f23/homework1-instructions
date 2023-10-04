@@ -477,8 +477,13 @@ Valgrind is another tool for checking memory leaks. If you want to check a progr
 hpc2:~$ make clean && make DEBUG=1
 ```
 
-to get rid of the existing build and get a fresh build. Run Valgrind using
-  - Note: Normally we would use `srun -t 1 valgrind ./matrix_multiply -p` but valgrind only appears to be installed on the head hpc2 node, so running it directly without srun.
+to get rid of the existing build and get a fresh build. Valgrind is installed on the `hpc2` head node and our `agate-1` node for the class. Run Valgrind using
+
+```console
+hpc2:~$ srun -t 1 -w agate-1 --reservation=eec289q valgrind ./matrix_multiply -p
+```
+
+or if necessary, you can also run Valgrind on the `hpc2` head node. *We would prefer you run Valgrind on agate-1, unless the node is completely allocated by other class members in future assignments*. 
 
 ```console
 hpc2:~$ valgrind ./matrix_multiply -p
