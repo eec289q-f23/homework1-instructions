@@ -258,7 +258,7 @@ int main() {
 
 There are two ways to fix this code. One way is to change `swap()` to be a macro, causing the operations to be evaluated in the scope of the macro invocation. Another way is to change `swap()` to use pointers. We will now ask you to fix the code by using pointers.
 
-> **Write-up 3**: File swap.c contains the code to swap two integers. Rewrite the `swap()` function using pointers and make appropriate changes in `main()` function so that the values are swapped with a call to `swap()`. Compile the code with make swap and run the program with ./swap. Provide your edited code in the write-up. Verify that the results of both `sizes.c` and `swap.c` are correct by using the python script `verifier.py`.
+> **Write-up 3**: File swap.c contains the code to swap two integers. Rewrite the `swap()` function using pointers and make appropriate changes in `main()` function so that the values are swapped with a call to `swap()`. Compile the code with make swap and run the program with ./swap. Provide your edited code in the write-up. Verify that the results of both `sizes.c` and `swap.c` are correct by running the python script `verifier.py` with `python verifier.py`.
   - This code is simple enough that you may run it directly on the `hpc2` head node
 
 # Basic tools
