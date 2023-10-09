@@ -598,7 +598,7 @@ To get an idea of the extent to which compiler optimizations can affect the perf
 
 > **Exercise:** Rebuild it again with optimizations (just type make). Both versions should print timing information, and you should verify that the optimized version is faster.
 
-> **Write-up 9**: Report the execution time of your programs compiled in debug mode with `-O0` and normally with `-O3`.
+> **Write-up 9**: Report the execution time of your programs compiled in debug mode with `-O0` (with `make DEBUG=1`) and normally with `-O3` (with just `make` after updating Makefile above).
 
 # C style guidelines
 
